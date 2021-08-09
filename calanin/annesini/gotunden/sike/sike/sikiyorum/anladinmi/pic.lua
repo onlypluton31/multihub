@@ -3140,7 +3140,7 @@ PetX.TextScaled = true
 PetX.TextSize = 14.000
 PetX.TextWrapped = true
 PetX.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multihub/main/script/petx.lua", true))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/naypramx/Simulator/Script/petsimx'))()
 	main.Visible = false
 	main.Active = false
 end)
