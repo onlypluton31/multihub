@@ -24,7 +24,7 @@ main.Parent = MultiHub
 main.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
 main.BackgroundTransparency = 0.450
 main.BorderColor3 = Color3.fromRGB(27, 42, 53)
-main.Size = UDim2.new(0, 1621, 0, 803)
+main.Size = UDim2.new(1, 0, 1, 0)
 main.Active = true
 main.Visible = true
 
