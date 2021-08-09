@@ -16,7 +16,7 @@ local KeyLabel = Instance.new("TextLabel")
 local Login = Instance.new("TextButton")
 
 MultiHub.Name = "MultiHub"
-MultiHub.Parent = game.Workspace
+MultiHub.Parent = game.CoreGui
 MultiHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
