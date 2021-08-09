@@ -63,7 +63,7 @@ end
 end)
 TextButton.MouseButton1Down:connect(function()
 	
-if Key.Text == "multiplekill" then
+if Key.Text == "multibest" then
 	KeyFrame.Visible = false
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multihub/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))()
 end
