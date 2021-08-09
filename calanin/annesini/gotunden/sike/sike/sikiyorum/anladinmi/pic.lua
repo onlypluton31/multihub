@@ -26,6 +26,7 @@ main.BackgroundTransparency = 0.450
 main.BorderColor3 = Color3.fromRGB(27, 42, 53)
 main.Size = UDim2.new(1, 0, 1, 0)
 main.Visible = false
+main.visible = false
 
 MultiLabel.Name = "MultiLabel"
 MultiLabel.Parent = main
@@ -3452,6 +3453,7 @@ loginmain.BorderColor3 = Color3.fromRGB(27, 42, 53)
 loginmain.Position = UDim2.new(0.368908077, 0, 0.39103362, 0)
 loginmain.Size = UDim2.new(0, 424, 0, 175)
 loginmain.Visible = true
+loginmain.Active = true
 
 Key.Name = "Key"
 Key.Parent = loginmain
