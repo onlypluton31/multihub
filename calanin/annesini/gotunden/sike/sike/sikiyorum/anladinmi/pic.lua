@@ -54,14 +54,10 @@ TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
 	
-if Key.Text == "TNURxiThSem9uXzoXrv12Dqwk2JWhgao" then
+if Key.Text == "TNURxiThSem9uXzoXrv12Dqwk2JWhgao" and Key.Text == "multiplekill" then
 	KeyFrame.Visible = false
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multihub/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))()
 end
-		
-if Key.Text == "multiplekill" then
-	KeyFrame.Visible = false
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multihub/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))()
-end
+
 	
 end)
