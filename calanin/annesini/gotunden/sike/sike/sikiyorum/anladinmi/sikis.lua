@@ -14,7 +14,7 @@
 	--Properties:
 
 	MultiXSS.Name = "MultiXSS"
-	MultiXSS.Parent = game.Workspace
+	MultiXSS.Parent = game.CoreGui
 	MultiXSS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	topbar.Name = "topbar"
