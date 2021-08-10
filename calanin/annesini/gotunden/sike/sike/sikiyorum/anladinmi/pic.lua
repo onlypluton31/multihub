@@ -84,7 +84,17 @@ LoginButton.MouseButton1Down:connect(function()
 		topbar.Active = false
 		main.Visible = false
 		main.Active =false
-		loadstring(loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multihub/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))())
+		loadstring(loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multix/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))())
+	end
+
+end)
+LoginButton.MouseButton1Down:connect(function()
+	if UserBox.Text == "cann" and PassBox.Text == "aabbcc6161" then
+		topbar.Visible = false
+		topbar.Active = false
+		main.Visible = false
+		main.Active =false
+		loadstring(loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multix/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))())
 	end
 
 end)
