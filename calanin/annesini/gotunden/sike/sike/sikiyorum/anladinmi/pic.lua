@@ -1,14 +1,18 @@
---Localler:
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local multiX = Instance.new("ScreenGui")
 local topbar = Instance.new("Frame")
-local XLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local main = Instance.new("Frame")
 local UserBox = Instance.new("TextBox")
 local LoginButton = Instance.new("TextButton")
 local PassBox = Instance.new("TextBox")
+local XLabel = Instance.new("TextLabel")
 
---Ayarlar:
+--Properties:
 
 multiX.Name = "multiX"
 multiX.Parent = game.CoreGui
@@ -23,18 +27,6 @@ topbar.Size = UDim2.new(0, 258, 0, 50)
 topbar.Draggable = true
 topbar.Visible = true
 
-XLabel.Name = "XLabel"
-XLabel.Parent = topbar
-XLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-XLabel.BackgroundTransparency = 1.000
-XLabel.Size = UDim2.new(0, 119, 0, 50)
-XLabel.Font = Enum.Font.SciFi
-XLabel.Text = "multiX"
-XLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-XLabel.TextScaled = true
-XLabel.TextSize = 14.000
-XLabel.TextWrapped = true
-
 TextButton.Parent = topbar
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
@@ -46,6 +38,12 @@ TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	topbar.Visible = false
+	topbar.Active = false
+	main.Visible = false
+	main.Active =false
+end)
 
 main.Name = "main"
 main.Parent = topbar
@@ -53,6 +51,9 @@ main.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 main.BorderColor3 = Color3.fromRGB(39, 39, 39)
 main.Position = UDim2.new(0, 0, 1, 0)
 main.Size = UDim2.new(1, 0, 3.29999995, 0)
+main.Draggable = true
+main.Visible = true
+
 
 UserBox.Name = "UserBox"
 UserBox.Parent = main
@@ -80,6 +81,9 @@ LoginButton.TextSize = 14.000
 LoginButton.MouseButton1Down:connect(function()
 	if UserBox.Text == "multix" and PassBox.Text == "multix" then
 		topbar.Visible = false
+		topbar.Active = false
+		main.Visible = false
+		main.Active =false
 		loadstring(loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multihub/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))())
 	end
 
@@ -97,3 +101,15 @@ PassBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 PassBox.TextScaled = true
 PassBox.TextSize = 14.000
 PassBox.TextWrapped = true
+
+XLabel.Name = "XLabel"
+XLabel.Parent = topbar
+XLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XLabel.BackgroundTransparency = 1.000
+XLabel.Size = UDim2.new(0, 119, 0, 50)
+XLabel.Font = Enum.Font.SciFi
+XLabel.Text = "multiX"
+XLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+XLabel.TextScaled = true
+XLabel.TextSize = 14.000
+XLabel.TextWrapped = true
