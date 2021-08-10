@@ -1,72 +1,99 @@
-local Login = Instance.new("ScreenGui")
-local KeyFrame = Instance.new("Frame")
-local Key = Instance.new("TextBox")
-local Label = Instance.new("TextLabel")
+--Localler:
+local multiX = Instance.new("ScreenGui")
+local topbar = Instance.new("Frame")
+local XLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
+local main = Instance.new("Frame")
+local UserBox = Instance.new("TextBox")
+local LoginButton = Instance.new("TextButton")
+local PassBox = Instance.new("TextBox")
 
-Login.Name = "Login"
-Login.Parent = game.CoreGui
-Login.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+--Ayarlar:
 
-KeyFrame.Name = "KeyFrame"
-KeyFrame.Parent = Login
-KeyFrame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-KeyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-KeyFrame.Position = UDim2.new(0.394818008, 0, 0.381071001, 0)
-KeyFrame.Size = UDim2.new(0, 340, 0, 190)
-KeyFrame.Visible = true
+multiX.Name = "multiX"
+multiX.Parent = game.CoreGui
+multiX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Key.Name = "Key"
-Key.Parent = KeyFrame
-Key.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
-Key.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Key.Position = UDim2.new(0.0294117648, 0, 0.31334424, 0)
-Key.Size = UDim2.new(0, 320, 0, 50)
-Key.Font = Enum.Font.SourceSans
-Key.Text = "Enter Key Here"
-Key.TextColor3 = Color3.fromRGB(255, 255, 255)
-Key.TextScaled = true
-Key.TextSize = 14.000
-Key.TextWrapped = true
+topbar.Name = "topbar"
+topbar.Parent = multiX
+topbar.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+topbar.BorderColor3 = Color3.fromRGB(84, 84, 84)
+topbar.Position = UDim2.new(0.327272713, 0, 0.468244076, 0)
+topbar.Size = UDim2.new(0, 258, 0, 50)
+topbar.Draggable = true
+topbar.Visible = true
 
-Label.Name = "Label"
-Label.Parent = KeyFrame
-Label.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-Label.BorderColor3 = Color3.fromRGB(53, 53, 53)
-Label.Size = UDim2.new(0, 340, 0, 53)
-Label.Font = Enum.Font.SourceSans
-Label.Text = "MultiHub"
-Label.TextColor3 = Color3.fromRGB(255, 255, 255)
-Label.TextScaled = true
-Label.TextSize = 14.000
-Label.TextWrapped = true
+XLabel.Name = "XLabel"
+XLabel.Parent = topbar
+XLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XLabel.BackgroundTransparency = 1.000
+XLabel.Size = UDim2.new(0, 119, 0, 50)
+XLabel.Font = Enum.Font.SciFi
+XLabel.Text = "multiX"
+XLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+XLabel.TextScaled = true
+XLabel.TextSize = 14.000
+XLabel.TextWrapped = true
 
-TextButton.Parent = KeyFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.Position = UDim2.new(0.205882356, 0, 0.642105281, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Login"
+TextButton.Parent = topbar
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0.799877524, 0, 0, 0)
+TextButton.Size = UDim2.new(0.200122327, 0, 1, 0)
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "X"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
-TextButton.MouseButton1Down:connect(function()
-	
-if Key.Text == "KppOAVZKc68fOnYZXW68M5XhYoHdOm8q" then
-	KeyFrame.Visible = false
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multihub/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))()
-end
 
-	
-end)
-TextButton.MouseButton1Down:connect(function()
-	
-if Key.Text == "multibest" then
-	KeyFrame.Visible = false
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multihub/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))()
-end
+main.Name = "main"
+main.Parent = topbar
+main.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+main.BorderColor3 = Color3.fromRGB(39, 39, 39)
+main.Position = UDim2.new(0, 0, 1, 0)
+main.Size = UDim2.new(1, 0, 3.29999995, 0)
 
-	
+UserBox.Name = "UserBox"
+UserBox.Parent = main
+UserBox.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+UserBox.BorderColor3 = Color3.fromRGB(84, 84, 84)
+UserBox.Position = UDim2.new(0.0387596898, 0, 0.0666666701, 0)
+UserBox.Size = UDim2.new(0.922480643, 0, 0.266666681, 0)
+UserBox.Font = Enum.Font.SciFi
+UserBox.Text = "Username"
+UserBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserBox.TextScaled = true
+UserBox.TextSize = 14.000
+UserBox.TextWrapped = true
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = main
+LoginButton.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+LoginButton.BorderColor3 = Color3.fromRGB(84, 84, 84)
+LoginButton.Position = UDim2.new(0.112403102, 0, 0.73939395, 0)
+LoginButton.Size = UDim2.new(0.77519381, 0, 0.224242419, 0)
+LoginButton.Font = Enum.Font.SourceSans
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.TextSize = 14.000
+LoginButton.MouseButton1Down:connect(function()
+	if UserBox.Text == "multix" and PassBox.Text == "multix" then
+		topbar.Visible = false
+		loadstring(loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multihub/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))())
+	end
+
 end)
+
+PassBox.Name = "PassBox"
+PassBox.Parent = main
+PassBox.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+PassBox.BorderColor3 = Color3.fromRGB(84, 84, 84)
+PassBox.Position = UDim2.new(0.0387596898, 0, 0.372727275, 0)
+PassBox.Size = UDim2.new(0.922480643, 0, 0.271515161, 0)
+PassBox.Font = Enum.Font.SciFi
+PassBox.Text = "Password"
+PassBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+PassBox.TextScaled = true
+PassBox.TextSize = 14.000
+PassBox.TextWrapped = true
