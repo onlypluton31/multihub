@@ -79,7 +79,7 @@ LoginButton.Text = "Login"
 LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoginButton.TextSize = 14.000
 LoginButton.MouseButton1Down:connect(function()
-	if UserBox.Text == "multix" and PassBox.Text == "multix" then
+	if UserBox.Text == "onlydev" and PassBox.Text == "dev" then
 		topbar.Visible = false
 		topbar.Active = false
 		main.Visible = false
@@ -90,6 +90,16 @@ LoginButton.MouseButton1Down:connect(function()
 end)
 LoginButton.MouseButton1Down:connect(function()
 	if UserBox.Text == "cann" and PassBox.Text == "aabbcc6161" then
+		topbar.Visible = false
+		topbar.Active = false
+		main.Visible = false
+		main.Active =false
+		loadstring(loadstring(game:HttpGet("https://raw.githubusercontent.com/onlypluton31/multix/main/calanin/annesini/gotunden/sike/sike/sikiyorum/anladinmi/31.lua", true))())
+	end
+
+end)
+LoginButton.MouseButton1Down:connect(function()
+	if UserBox.Text == "multixfree" and PassBox.Text == "multixfreeusers" then
 		topbar.Visible = false
 		topbar.Active = false
 		main.Visible = false
